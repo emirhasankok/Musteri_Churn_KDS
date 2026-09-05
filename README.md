@@ -55,5 +55,3 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 3. Klasör içindeki `.env.example` dosyasının adını `.env` olarak değiştirin ve içindeki API/Veritabanı linklerini sisteminize göre ayarlayın.
 4. **FastAPI** makine öğrenmesi sunucusunu başlatmak için `uvicorn Churn_FastAPI:app --reload` komutunu kullanın.
 5. Farklı bir terminal açıp **Streamlit** yönetici panelini başlatmak için `streamlit run Churn_UI.py` komutunu çalıştırın.
-   ```bash
-   Update-Database
