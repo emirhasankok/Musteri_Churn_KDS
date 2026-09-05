@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.pkl
+.env
+
+# C# / .NET
+[Bb]in/
+[Oo]bj/
+appsettings.Development.json

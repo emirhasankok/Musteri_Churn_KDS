@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+joblib
+numpy
+scikit-learn
+streamlit
+requests
+pandas
+plotly
+python-dotenv
+sqlalchemy
+pyodbc
+openpyxl

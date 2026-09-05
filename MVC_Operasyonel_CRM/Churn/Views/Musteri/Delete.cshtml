@@ -1,0 +1,57 @@
+﻿@model Churn.Models.Musteriler
+
+@{
+    ViewData["Title"] = "Müşteri Sil";
+}
+
+<h1>Müşteri Sil</h1>
+
+<h3>Bu müşteriyi silmek istediğinize emin misiniz?</h3>
+<div>
+    <h4>Müşteriler</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Yas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Yas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KullanimSuresiAy)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KullanimSuresiAy)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AylikHarcamaTl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AylikHarcamaTl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DestekTalebiSayisi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DestekTalebiSayisi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SonGirisGunu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SonGirisGunu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ChurnDurumu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ChurnDurumu)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MusteriId" />
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a asp-action="Index">Geri Dön</a>
+    </form>
+</div>
